@@ -18,8 +18,10 @@ module ActiveModel
 
       def validate_each(record, attribute, value)
         schemes = [*options.fetch(:schemes)].map(&:to_s)
+        schemes << nil if schemes.include? ""
         begin
           uri = Addressable::URI.parse(value)
+          uri = Addressable::URI.parse('//' + value) unless uri.scheme
           unless uri && uri.host && schemes.include?(uri.scheme) && (!options.fetch(:no_local) || uri.host.include?('.'))
             record.errors.add(attribute, options.fetch(:message), :value => value)
           end
