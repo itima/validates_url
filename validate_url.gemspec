@@ -6,14 +6,14 @@
 
 Gem::Specification.new do |s|
   s.name = "validate_url"
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
-  s.authors = ["Tanel Suurhans", "Tarmo Lehtpuu"]
+  s.authors = ["Tanel Suurhans", "Tarmo Lehtpuu", "George Vinogradov"]
   s.date = "2014-11-13"
   s.description = "Library for validating urls in Rails."
-  s.email = ["tanel.suurhans@perfectline.ee", "tarmo.lehtpuu@perfectline.ee"]
+  s.email = ["tanel.suurhans@perfectline.ee", "tarmo.lehtpuu@perfectline.ee", "g.vinogradov@itima.ru"]
   s.extra_rdoc_files = [
     "LICENSE.md",
     "README.md"
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
     "lib/locale/it.yml",
     "lib/validate_url.rb"
   ]
-  s.homepage = "http://github.com/perfectline/validates_url/tree/master"
+  s.homepage = "http://github.com/itima/validates_url/tree/master"
   s.rubygems_version = "2.2.2"
   s.summary = "Library for validating urls in Rails."
 
